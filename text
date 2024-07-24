@@ -1,0 +1,87 @@
+<div class="book">
+  <div class="book-img-container">
+    <img src="./img/$img" />
+  </div>
+  <div class="book-info">
+    <h4>$name</h4>
+    <p>Author: $author</p>
+    <p>Genre: $genre</p>
+    <p>Price: $price</p>
+  </div>
+</div>
+
+if ($genretype == "*") { $data = "SELECT * FROM allgenre ORDER BY id DESC"; }
+else { $data = "SELECT * FROM allgenre WHERE genre= $genretype ORDER BY id
+DESC"; }
+
+
+      $query = "INSERT INTO `allgerne` VALUES ('','$name','$customer','$address','$phone','$quantity','$total')";
+
+
+
+      <?php
+    
+    include('connection.php');
+ 
+
+    if(isset($_POST['submit'])){
+      $name = 'Lord Of The Ring';
+      $price = 3500;
+      $customer = 'Pyae Sone Hein';
+      $phone = '0812321313';
+      $address = 'Yangon';
+      $quantity = 1;
+
+      //calculate total price
+      $total = $price * $quantity;
+
+      $query = "INSERT INTO `orderlist` VALUES ('','$name','$customer','$address','$phone','$quantity','$total')";
+
+      $con->query($query);
+
+
+      echo $name;
+      echo $customer;
+      echo $phone;
+      echo $address;
+      echo $quantity;
+      echo $price;
+      echo $total;
+
+      
+    }
+
+
+
+  ?>
+
+
+
+
+<?php 
+  function displayBook($val) {
+    if ($val->num_rows > 0) {
+      while (list($id, $name, $author, $date, $price, $genre, $img) = mysqli_fetch_array($val)) {
+
+        echo "<div class='book'>
+                <div class='book-img-container'>
+                  <img  src='admin/img/$img' alt='image' />
+                </div>
+                <div class='book-info'> 
+                  <h4>$name</h4>
+                  <p>Author: $author</p>
+                    <p>Genre: $genre</p>
+                  <p>Price: $price</p>
+                </div>
+                <a href='order.php?id=$id&name=$name&price=$price&img=$img'><button>Buy Now</button></a>
+             </div>";
+
+      }
+    } else {
+      echo "
+      <h1>No data available</h1>";
+    }
+
+  }
+
+?>

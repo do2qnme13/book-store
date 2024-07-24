@@ -1,0 +1,53 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.order-placed-successfully {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgb(248, 245, 245);
+}
+
+h1 {
+  color: rgb(37, 144, 37);
+  font-size: 3rem;
+  text-shadow: 0 0 5px rgba(44, 45, 44, 0.5);
+}
+.go-to-products-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.slide-down {
+  animation: slide-down 0.5s ease-in;
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

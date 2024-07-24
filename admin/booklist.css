@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.booklist-table {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  padding-top: 5rem;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: darkblue;
+}
+button {
+  background-color: #0b5421;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+button:hover {
+  opacity: 0.8;
+}
+.gohome-btn {
+  background-color: darkblue;
+  color: white;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+th,
+td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dddddd;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* Header row styling */
+thead tr {
+  background-color: #f2f2f2;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Header text styling */
+th {
+  background-color: #0b1254;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.delete-btn-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.appears {
+  animation: appears 0.8s ease-in-out;
+}
+
+@keyframes appears {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

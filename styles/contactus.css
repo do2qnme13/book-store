@@ -1,0 +1,80 @@
+.flex-container {
+  display: flex;
+}
+
+.contact-us-section {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-infos {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  position: relative;
+}
+
+.contact-us-infos::after {
+  content: " ";
+  width: 3px;
+  height: 80%;
+  background-color: darkblue;
+  position: absolute;
+  right: 100px;
+}
+
+.contacts {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-form {
+  width: 60%;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2rem;
+}
+input,
+textarea {
+  width: 80%;
+  height: 30px;
+  border: none;
+  background-color: rgba(202, 227, 250, 0.6);
+  color: rgb(91, 84, 84);
+  outline: none;
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+textarea {
+  resize: none;
+  height: 200px;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
+.send-message-btn {
+  width: 40%;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+.send-message-btn:hover {
+  background-color: green;
+}

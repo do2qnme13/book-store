@@ -1,0 +1,72 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(254, 255, 255);
+  background: url("./img/loginbg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  margin: 0;
+}
+h1 {
+  color: aliceblue;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem;
+  background-color: aliceblue;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+input {
+  width: 200px;
+  height: 30px;
+  padding: 0.2rem 1rem;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.submit-btn {
+  width: 100px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: aliceblue;
+  color: rgb(65, 64, 64);
+}
+.submit-btn:hover {
+  opacity: 0.5;
+}
+label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: rgb(36, 47, 57);
+}
+.username,
+.password {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,83 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.addbook-container {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 2rem;
+}
+h1,
+label {
+  color: rgb(10, 33, 68);
+}
+label {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+button {
+  padding: 0.4rem 2rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(10, 33, 68);
+  border: none;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5rem;
+  gap: 1rem;
+  box-shadow: 0 0 10px rgba(16, 35, 126, 0.7);
+  border-radius: 4px;
+}
+
+input,
+select {
+  padding: 0.3rem 1rem;
+}
+
+.submit-btn {
+  border: none;
+  color: white;
+  background-color: rgb(10, 33, 68);
+  border-radius: 5px;
+  padding: 0.4rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: rgb(180, 172, 172);
+  color: black;
+}
+
+.scale-in {
+  animation: scale-in 0.8s ease-in-out;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

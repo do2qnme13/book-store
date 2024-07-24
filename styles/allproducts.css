@@ -1,0 +1,75 @@
+section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 2rem;
+}
+
+select {
+  width: 400px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.book-container {
+  width: 100vw;
+  display: flex;
+  padding: 0 5rem;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  height: 30px;
+  margin-left: 1rem;
+  border: none;
+  padding: 0.4rem 1rem;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+input:hover {
+  background-color: green;
+  color: white;
+}
+.book {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+p {
+  word-spacing: 4px;
+}
+.book-img-container {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
