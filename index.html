@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/allproducts.css" />
   </head>
   <body>
     <navbar>
@@ -20,21 +21,152 @@
         <img src="image/shop.png" alt="image" />
       </div>
       <div class="shop-info">
-        <h1>Welcome to Myanbooks</h1>
+        <h1>Welcome to The Books</h1>
         <p>
-          Welcome to Myanbooks, your cozy haven for book lovers and literary
+          Welcome to The Books, your cozy haven for book lovers and literary
           enthusiasts! Nestled in the heart of Yangon, our shop offers a diverse
           collection of books spanning all genres and interests. Whether you're
           seeking the latest bestsellers, timeless classics, or hidden gems,
           you'll find it all on our shelves. Our knowledgeable and friendly
           staff are always ready to recommend your next great read. Come in,
-          grab a cup of coffee, and lose yourself in the world of books at
-          Myanbooks.
+          grab a cup of coffee, and lose yourself in the world of books at The
+          Books.
         </p>
         <a href="allproducts.php"><button>View Books</button></a>
       </div>
     </header>
 
-    <section class="promotion-section"></section>
+    <section class="best-seller-section">
+      <h1>The Best Sellers</h1>
+      <div class="book-container">
+        <div class="book">
+          <div class="book-img-container">
+            <img src="admin/img/popular1.jpg" alt="image" />
+          </div>
+          <div class="book-info">
+            <h4>Ponoyo</h4>
+            <p>Author: Miyasaki</p>
+            <p>Genre: Fantasy</p>
+            <p>Price: 24000</p>
+          </div>
+          <a href="order.php?id=1&name=Ponoyo&price=24000&img=popular1.jpg"
+            ><button>Buy Now</button></a
+          >
+        </div>
+
+        <div class="book">
+          <div class="book-img-container">
+            <img src="admin/img/popular2.jpg" alt="image" />
+          </div>
+          <div class="book-info">
+            <h4>Totoro</h4>
+            <p>Author: Miyasaki</p>
+            <p>Genre: Fantasy</p>
+            <p>Price: 18000</p>
+          </div>
+          <a href="order.php?id=1&name=Totoro&price=18000&img=popular2.jpg"
+            ><button>Buy Now</button></a
+          >
+        </div>
+        <div class="book">
+          <div class="book-img-container">
+            <img src="admin/img/popular3.jpg" alt="image" />
+          </div>
+          <div class="book-info">
+            <h4>Spider Man</h4>
+            <p>Author: Stan Lee</p>
+            <p>Genre: Fantasy</p>
+            <p>Price: 15000</p>
+          </div>
+          <a href="order.php?id=1&name=Spider-Man&price=24000&img=popular3.jpg"
+            ><button>Buy Now</button></a
+          >
+        </div>
+
+        <div class="book">
+          <div class="book-img-container">
+            <img src="admin/img/popular4.jpg" alt="image" />
+          </div>
+          <div class="book-info">
+            <h4>The Avengers</h4>
+            <p>Author: Stanlee</p>
+            <p>Genre: Fantasy</p>
+            <p>Price: 19000</p>
+          </div>
+          <a
+            href="order.php?id=1&name=The Avengers&price=24000&img=popular4.jpg"
+            ><button>Buy Now</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="new-released-section">
+      <h1>Latest Released</h1>
+      <div class="book-container">
+        <div class="book">
+          <div class="book-img-container">
+            <img src="admin/img/latest1.jpg" alt="image" />
+          </div>
+          <div class="book-info">
+            <h4>Superman</h4>
+            <p>Author: James Gunn</p>
+            <p>Genre: Fantasy</p>
+            <p>Price: 13000</p>
+          </div>
+          <a href="order.php?id=1&name=Superman&price=13000&img=latest1.jpg"
+            ><button>Buy Now</button></a
+          >
+        </div>
+
+        <div class="book">
+          <div class="book-img-container">
+            <img src="admin/img/latest2.jpg" alt="image" />
+          </div>
+          <div class="book-info">
+            <h4>One Punch Man</h4>
+            <p>Author: Miyasaki</p>
+            <p>Genre: Fantasy</p>
+            <p>Price: 18000</p>
+          </div>
+          <a
+            href="order.php?id=1&name=One Punch Man&price=18000&img=latest2.jpg"
+            ><button>Buy Now</button></a
+          >
+        </div>
+        <div class="book">
+          <div class="book-img-container">
+            <img src="admin/img/latest3.jpg" alt="image" />
+          </div>
+          <div class="book-info">
+            <h4>Jujustsu Kisen</h4>
+            <p>Author: Akautami</p>
+            <p>Genre: Fantasy</p>
+            <p>Price: 20000</p>
+          </div>
+          <a
+            href="order.php?id=1&name=Jujustsu Kisen&price=20000&img=latest3.jpg"
+            ><button>Buy Now</button></a
+          >
+        </div>
+
+        <div class="book">
+          <div class="book-img-container">
+            <img src="admin/img/latest4.jpg" alt="image" />
+          </div>
+          <div class="book-info">
+            <h4>Conjuring</h4>
+            <p>Author: Jon Doe</p>
+            <p>Genre: Horror</p>
+            <p>Price: 25000</p>
+          </div>
+          <a href="order.php?id=1&name=Conjuring&price=25000&img=latest4.jpg"
+            ><button>Buy Now</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
   </body>
 </html>

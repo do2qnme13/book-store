@@ -13,7 +13,9 @@
   <center>
     <h1>Place an Order</h1>
   </center>
-<a href="allproducts.php"><button class="go-back-btn">Go Back</button></a>
+<a href="allproducts.php"><button class="go-back-btn">Go to Products</button></a>
+<a href="index.html"><button class="go-back-btn">Go to Home</button></a>
+
 
   <section>
     <div class="book-img-container">
@@ -74,9 +76,7 @@
         $query->close();
       }
     }
-  } else {
-    echo "Expected POST request but received " . $_SERVER['REQUEST_METHOD'];
-  }
+  } 
 
   $con->close();
   ?>
